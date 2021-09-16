@@ -7,41 +7,41 @@ import javax.persistence.Id;
 
 @Entity
 public class Note {
-	private @Id @GeneratedValue long id;
-	private String title;	
-	private String content;
-	
-	public Note() {};
-	
-	public Note(String title, String content) {
-		super();
-		this.title = title;
-		this.content = content;
-	}
+    private @Id @GeneratedValue long id;
+    private String title;
+    private String content;
 
-	public long getId() {
-		return id;
-	}
+    public Note() {};
 
-	public void setId(long id) {
-		this.id = id;
-	}
+    public Note(String title, String content) {
+        super();
+        this.title = title;
+        this.content = content;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public long getId() {
+        return id;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public void setId(long id) {
+        this.id = id;
+    }
 
-	public String getContent() {
-		return content;
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
-	
-	
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+
 }
